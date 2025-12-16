@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip's Challenge - Emma Brodsky</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <main class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        <div class="project-content">
+            <h1>Chip's Challenge</h1>
+            
+            <div class="image-container">
+                <img src="./assets/chips-challenge.jpg" alt="Chip's Challenge Pathfinding Visualization" class="project-image-large">
+            </div>
+            
+            <p>An algorithmic solution to the classic Chip's Challenge puzzle game using A* pathfinding and intelligent search strategies.</p>
+            
+            <h2>Overview</h2>
+            <p>This project tackles the computational challenge of solving Chip's Challenge levels through automated pathfinding. By implementing the A* algorithm with custom heuristics, the solver can navigate complex puzzle layouts efficiently.</p>
+            
+            <h2>Algorithm Features</h2>
+            <ul>
+                <li>A* pathfinding with custom heuristic functions</li>
+                <li>State space search for optimal solutions</li>
+                <li>Handling of dynamic obstacles and moving enemies</li>
+                <li>Multi-objective optimization (keys, chips, goals)</li>
+                <li>Backtracking and replanning capabilities</li>
+            </ul>
+            
+            <h2>Implementation Details</h2>
+            <p>The solver uses advanced data structures to efficiently manage the search space and prune suboptimal paths. Custom heuristics account for the unique game mechanics, including collectible items, locked doors, and enemy movement patterns. The implementation demonstrates practical applications of graph search algorithms in game AI.</p>
+        </div>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
