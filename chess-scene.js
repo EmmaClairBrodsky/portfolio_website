@@ -36,7 +36,7 @@ scene.add(directionalLight2);
 // Load materials first, then the model
 const mtlLoader = new MTLLoader();
 mtlLoader.load(
-    './queen.mtl',  // <-- Change to your .mtl filename
+    'queen.mtl',  // <-- Change to your .mtl filename
     (materials) => {
         materials.preload();
         
@@ -44,7 +44,7 @@ mtlLoader.load(
         const objLoader = new OBJLoader();
         objLoader.setMaterials(materials);
         objLoader.load(
-            './queen.obj',  // <-- Change to your .obj filename
+            'queen.obj',  // <-- Change to your .obj filename
             (object) => {
                 scene.add(object);
                 
